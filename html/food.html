@@ -4,204 +4,216 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A food menu and gallery showcasing Kenyan cuisine and other popular dishes with food-related GIFs.">
-  <title>Bokeems Cuisine Gallery</title>
-  <!-- Link to external CSS file in the style folder -->
+  <title>Bokeem & Daniel Cuisine Gallery</title>
   <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+  <header>
+    <h1>Bokeem & Daniel Cuisine Gallery</h1>
+  </header>
 
-<header>
-  <h1>Bokeem & Daniel Cuisine Gallery</h1>
-</header>
+  <main>
+    <section id="hero-section">
+      <h2>Our Special Dishes</h2>
+      <picture>
+        <source srcset="./../foodimages/gallery2.webp" type="image/webp">
+        <source srcset="./../foodimages/gallery2.jpeg" type="image/jpeg">
+        <img src="./../foodimages/gallery2.jpg" alt="Collection of Kenyan Dishes" loading="lazy" class="background-image">
+      </picture>
+      <div class="overlay-card">
+        <h3>Signature Kenyan Cuisine</h3>
+        <p>Explore our mouthwatering Nyama Choma, traditional Ugali, and flavorful stews. Our menu showcases the best of Kenyan cuisine, prepared with love and expertise by our talented chefs.</p>
+      </div>
+    </section>
 
-<!-- Hero Section -->
-<!-- Combined Optimized and Background Image Section -->
-<section id="hero-section">
-    <h2>Our Special Dishes</h2>
-    <picture>
-      <source srcset="./../foodimages/gallery2.webp" type="image/webp">
-      <source srcset="./../foodimages/gallery2.jpeg" type="image/jpeg">
-      <img src="./../foodimages/gallery2.jpg" alt="Collection of Kenyan Dishes" loading="lazy" class="background-image">
-    </picture>
-    <div class="overlay-card">
-      <h3>Signature Kenyan Cuisine</h3>
-      <p>Explore our mouthwatering Nyama Choma, traditional Ugali, and flavorful stews. Our menu showcases the best of Kenyan cuisine, prepared with love and expertise by our talented chefs.</p>
-    </div>
-  </section>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <ul class="menu-list">
+        <li>
+          <div class="image-container">
+            <img src="./../foodimages/nyamachoma.jpeg" alt="Nyama Choma" class="bordered-image">
+          </div>
+          <div class="content">
+            <h3>Nyama Choma</h3>
+            <p>Grilled meat served with kachumbari (a tomato-onion salad) and ugali. A true Kenyan delicacy that's perfect for sharing.</p>
+            <span class="price">KSh 550</span>
+          </div>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="./../foodimages/chickenfries.jpg" alt="Fried Chicken" class="bordered-image">
+          </div>
+          <div class="content">
+            <h3>Fried Chicken</h3>
+            <p>Crispy fried chicken served with fries and a side of coleslaw. A classic comfort food with our special seasoning.</p>
+            <span class="price">KSh 650</span>
+          </div>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="./../foodimages/sphagetti.jpg" alt="Spaghetti" class="bordered-image">
+          </div>
+          <div class="content">
+            <h3>Spaghetti</h3>
+            <p>Classic spaghetti served with meatballs in a rich tomato sauce. A hearty and satisfying Italian-inspired dish.</p>
+            <span class="price">KSh 350</span>
+          </div>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="./../foodimages/smocha2.jpeg" alt="Smocha" class="bordered-image">
+          </div>
+          <div class="content">
+            <h3>Smocha</h3>
+            <p>A unique street food: a combination of boiled egg and samosa wrapped in chapati. A delightful fusion of flavors and textures.</p>
+            <span class="price">KSh 100</span>
+          </div>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="./../foodimages/ugalibeef.jpg" alt="Ugali & Wet Fry" class="bordered-image">
+          </div>
+          <div class="content">
+            <h3>Ugali & Wet Fry</h3>
+            <p>Kenya's staple dish of cornmeal dough (ugali) served with succulent fried beef. A hearty and satisfying traditional meal.</p>
+            <span class="price">KSh 750</span>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-<!-- Food Menu Section -->
- <!-- Background borders Section -->
-<section>
-  <h2>Our Menu</h2>
-  <ul class="menu-list">
-    <li>
-      <div class="image-container">
-        <img src="./../foodimages/nyamachoma.jpeg" alt="Nyama Choma" class="bordered-image">
-      </div>
-      <div class="content">
-        <h3>Nyama Choma</h3>
-        <p>Grilled meat served with kachumbari (a tomato-onion salad) and ugali. A true Kenyan delicacy that's perfect for sharing.</p>
-        <span class="price">KSh 550</span>
-      </div>
-    </li>
-    <li>
-      <div class="image-container">
-        <img src="./../foodimages/chickenfries.jpg" alt="Fried Chicken" class="bordered-image">
-      </div>
-      <div class="content">
-        <h3>Fried Chicken</h3>
-        <p>Crispy fried chicken served with fries and a side of coleslaw. A classic comfort food with our special seasoning.</p>
-        <span class="price">KSh 650</span>
-      </div>
-    </li>
-    <li>
-      <div class="image-container">
-        <img src="./../foodimages/sphagetti.jpg" alt="Spaghetti" class="bordered-image">
-      </div>
-      <div class="content">
-        <h3>Spaghetti</h3>
-        <p>Classic spaghetti served with meatballs in a rich tomato sauce. A hearty and satisfying Italian-inspired dish.</p>
-        <span class="price">KSh 350</span>
-      </div>
-    </li>
-    <li>
-      <div class="image-container">
-        <img src="./../foodimages/smocha2.jpeg" alt="Smocha" class="bordered-image">
-      </div>
-      <div class="content">
-        <h3>Smocha</h3>
-        <p>A unique street food: a combination of boiled egg and samosa wrapped in chapati. A delightful fusion of flavors and textures.</p>
-        <span class="price">KSh 100</span>
-      </div>
-    </li>
-    <li>
-      <div class="image-container">
-        <img src="./../foodimages/ugalibeef.jpg" alt="Ugali & Wet Fry" class="bordered-image">
-      </div>
-      <div class="content">
-        <h3>Ugali & Wet Fry</h3>
-        <p>Kenya's staple dish of cornmeal dough (ugali) served with succulent fried beef. A hearty and satisfying traditional meal.</p>
-        <span class="price">KSh 750</span>
-      </div>
-    </li>
-  </ul>
-</section>
-
-<!-- Graphics Section (SVG) -->
-<section id="special-staff">
-  <h2>Our Special Staff</h2>
-  <div class="staff-container">
-    <div class="staff-card">
-      <svg width="220" height="270" viewBox="0 0 220 270">
-        <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
-        <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-bro.svg"/>
-        <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Master Chef</text>
-      </svg>
-      <h3>Bokeem Waite</h3>
-      <p>2 years of culinary excellence</p>
-    </div>
-    <div class="staff-card">
-      <svg width="220" height="270" viewBox="0 0 220 270">
-        <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
-        <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-cuate.svg"/>
-        <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Culinary Artist</text>
-      </svg>
-      <h3>Jane Doe</h3>
-      <p>Innovative fusion cuisine specialist</p>
-    </div>
-    <div class="staff-card">
-      <svg width="220" height="270" viewBox="0 0 220 270">
-        <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
-        <image x="10" y="40" width="200" height="200" href="./../foodimages/Cooking-cuate.svg"/>
-        <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Flavor Expert</text>
-      </svg>
-      <h3>Daniel Wisdom</h3>
-      <p>Spice master and taste profiler</p>
-    </div>
-  </div>
-</section>
-
-<!-- GIF Section -->
-<section id="food-in-action">
-  <h2>Food in Action</h2>
-  <div class="gif-gallery">
-    <div class="gif-wrapper">
-      <div class="gif-container">
-        <iframe src="https://giphy.com/embed/2FazdQof8pxdNYyOc" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>
-      <p class="gif-caption">Nyama Choma grilling</p>
-    </div>
-    <div class="gif-wrapper">
-      <div class="gif-container">
-        <iframe src="https://giphy.com/embed/8Xg2ZRqynzIdkKqzDb" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>
-      <p class="gif-caption">Fried Chicken</p>
-    </div>
-    <div class="gif-wrapper">
-      <div class="gif-container">
-        <iframe src="https://giphy.com/embed/EV75XiLFlmQ9qrThg6" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>
-      <p class="gif-caption">Chapati and Stew</p>
-    </div>
-  </div>
-</section>
-
-<!-- Thumbnails Section -->
-<section id="food-thumbnails">
-  <h2>Food Gallery</h2>
-  <div class="thumbnail-gallery">
-    <div class="thumbnail-item">
-      <a href="./../foodimages/gallery4.jpg" class="thumbnail-link">
-        <img src="./../foodimages/gallery4.jpg" alt="Padi Veggies" class="thumbnail">
-        <div class="thumbnail-overlay">
-          <span>Padi Veggies</span>
+    <section id="special-staff">
+      <h2>Our Special Staff</h2>
+      <div class="staff-container">
+        <div class="staff-card">
+          <svg width="220" height="270" viewBox="0 0 220 270">
+            <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
+            <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-bro.svg"/>
+            <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Master Chef</text>
+          </svg>
+          <h3>Bokeem Waite</h3>
+          <p>2 years of culinary excellence</p>
         </div>
-      </a>
-    </div>
-    <div class="thumbnail-item">
-      <a href="./../foodimages/gallery3.jpg" class="thumbnail-link">
-        <img src="./../foodimages/gallery3.jpg" alt="Fried Chicken" class="thumbnail">
-        <div class="thumbnail-overlay">
-          <span>Fried Chicken</span>
+        <div class="staff-card">
+          <svg width="220" height="270" viewBox="0 0 220 270">
+            <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
+            <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-cuate.svg"/>
+            <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Culinary Artist</text>
+          </svg>
+          <h3>Jane Doe</h3>
+          <p>Innovative fusion cuisine specialist</p>
         </div>
-      </a>
-    </div>
-    <div class="thumbnail-item">
-      <a href="./../foodimages/gallery1.jpg" class="thumbnail-link">
-        <img src="./../foodimages/gallery1.jpg" alt="Chicken Tikka" class="thumbnail">
-        <div class="thumbnail-overlay">
-          <span>Chicken Tikka</span>
+        <div class="staff-card">
+          <svg width="220" height="270" viewBox="0 0 220 270">
+            <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
+            <image x="10" y="40" width="200" height="200" href="./../foodimages/Cooking-cuate.svg"/>
+            <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Flavor Expert</text>
+          </svg>
+          <h3>Daniel Wisdom</h3>
+          <p>Spice master and taste profiler</p>
         </div>
-      </a>
+      </div>
+    </section>
+
+    <section id="food-in-action">
+      <h2>Food in Action</h2>
+      <div class="gif-gallery">
+        <div class="gif-wrapper">
+          <div class="gif-container">
+            <iframe src="https://giphy.com/embed/2FazdQof8pxdNYyOc" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <p class="gif-caption">Nyama Choma grilling</p>
+        </div>
+        <div class="gif-wrapper">
+          <div class="gif-container">
+            <iframe src="https://giphy.com/embed/8Xg2ZRqynzIdkKqzDb" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <p class="gif-caption">Fried Chicken</p>
+        </div>
+        <div class="gif-wrapper">
+          <div class="gif-container">
+            <iframe src="https://giphy.com/embed/EV75XiLFlmQ9qrThg6" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          </div>
+          <p class="gif-caption">Chapati and Stew</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="food-thumbnails">
+      <h2>Food Gallery & Popularity</h2>
+      <div class="thumbnail-gallery">
+        <div class="thumbnail-item">
+          <a href="./../foodimages/gallery4.jpg" class="thumbnail-link">
+            <img src="./../foodimages/gallery4.jpg" alt="Padi Veggies" class="thumbnail">
+            <div class="thumbnail-overlay">
+              <span>Padi Veggies</span>
+            </div>
+          </a>
+          <div class="dish-popularity">
+            <label for="padi-veggies-meter">Popularity:</label>
+            <meter id="padi-veggies-meter" value="0.7" min="0" max="1">70%</meter>
+          </div>
+        </div>
+        <div class="thumbnail-item">
+          <a href="./../foodimages/gallery3.jpg" class="thumbnail-link">
+            <img src="./../foodimages/gallery3.jpg" alt="Fried Chicken" class="thumbnail">
+            <div class="thumbnail-overlay">
+              <span>Fried Chicken</span>
+            </div>
+          </a>
+          <div class="dish-popularity">
+            <label for="fried-chicken-meter">Popularity:</label>
+            <meter id="fried-chicken-meter" value="0.9" min="0" max="1">90%</meter>
+          </div>
+        </div>
+        <div class="thumbnail-item">
+          <a href="./../foodimages/gallery1.jpg" class="thumbnail-link">
+            <img src="./../foodimages/gallery1.jpg" alt="Chicken Tikka" class="thumbnail">
+            <div class="thumbnail-overlay">
+              <span>Chicken Tikka</span>
+            </div>
+          </a>
+          <div class="dish-popularity">
+            <label for="chicken-tikka-meter">Popularity:</label>
+            <meter id="chicken-tikka-meter" value="0.8" min="0" max="1">80%</meter>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-dish">
+      <h2>Featured Dish of the Week</h2>
+      <figure class="featured-dish-container">
+        <div class="featured-image-wrapper">
+          <img src="./../foodimages/nyamachoma2.jpg" alt="Nyama Choma" class="featured-image">
+        </div>
+        <figcaption class="featured-description">
+          <h3>Nyama Choma</h3>
+          <p>A beloved Kenyan delicacy of grilled meat, typically goat or beef. 
+          Slow-cooked to perfection, our Nyama Choma is tender, juicy, and full of flavor.</p>
+          <ul class="dish-details">
+            <li><strong>Served with:</strong> Kachumbari (tomato and onion salad) and ugali</li>
+            <li><strong>Best for:</strong> Social gatherings and celebrations across Kenya</li>
+            <li><strong>Chef's tip:</strong> Enjoy with a side of traditional Kenyan vegetables for a complete meal</li>
+          </ul>
+          <div class="dish-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">5.0 (Based on 150 reviews)</span>
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Bokeem & Daniel Cuisine Gallery. All rights reserved.</p>
+      <p>Created by:</p>
+      <ul>
+        <li>Bokeem Waite - 671144</li>
+        <li>Daniel Wisdom Kisiah - 671540</li>
+      </ul>
     </div>
-  </div>
-</section>
-
-
-
-<!-- Figure and Figcaption Section -->
-<section>
-  <h2>Image Descriptions with &lt;figure&gt; and &lt;figcaption&gt;</h2>
-  <figure>
-    <img src="https://via.placeholder.com/300" alt="Chapati">
-    <figcaption>Traditional Kenyan chapati, a soft, layered flatbread served with stews.</figcaption>
-  </figure>
-</section>
-
-<!-- Meter Element Section -->
-<section>
-  <h2>Dish Popularity</h2>
-  <div class="meter-container">
-    <label for="nyama-choma-meter">Nyama Choma:</label>
-    <meter id="nyama-choma-meter" value="0.8" min="0" max="1">80%</meter>
-    
-    <label for="ugali-meter">Ugali:</label>
-    <meter id="ugali-meter" value="0.9" min="0" max="1">90%</meter>
-    
-    <label for="chapati-meter">Chapati:</label>
-    <meter id="chapati-meter" value="0.7" min="0" max="1">70%</meter>
-  </div>
-</section>
-
+  </footer>
 </body>
 </html>
