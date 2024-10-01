@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+  <!-- Header: Title of the page -->
   <header>
     <h1>Bokeem & Daniel Cuisine Gallery</h1>
   </header>
 
   <main>
+    <!-- Background Image Section -->
     <section id="hero-section">
       <h2>Our Special Dishes</h2>
+      <!-- Image optimization: Using picture element for different image formats -->
       <picture>
         <source srcset="./../foodimages/gallery2.webp" type="image/webp">
         <source srcset="./../foodimages/gallery2.jpeg" type="image/jpeg">
@@ -26,11 +29,13 @@
       </div>
     </section>
 
+    <!-- Images with Borders -->
     <section id="menu">
       <h2>Our Menu</h2>
       <ul class="menu-list">
         <li>
           <div class="image-container">
+            <!-- Borders around images (applied via CSS) -->
             <img src="./../foodimages/nyamachoma.jpeg" alt="Nyama Choma" class="bordered-image">
           </div>
           <div class="content">
@@ -82,10 +87,12 @@
       </ul>
     </section>
 
+    <!-- Graphics Section: SVG -->
     <section id="special-staff">
       <h2>Our Special Staff</h2>
       <div class="staff-container">
         <div class="staff-card">
+          <!-- SVG graphics -->
           <svg width="220" height="270" viewBox="0 0 220 270">
             <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
             <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-bro.svg"/>
@@ -115,9 +122,11 @@
       </div>
     </section>
 
+    <!-- GIF Section -->
     <section id="food-in-action">
       <h2>Food in Action</h2>
       <div class="gif-gallery">
+        <!-- Animated GIFs -->
         <div class="gif-wrapper">
           <div class="gif-container">
             <iframe src="https://giphy.com/embed/2FazdQof8pxdNYyOc" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -139,16 +148,19 @@
       </div>
     </section>
 
+    <!-- Thumbnails Section -->
     <section id="food-thumbnails">
       <h2>Food Gallery & Popularity</h2>
       <div class="thumbnail-gallery">
         <div class="thumbnail-item">
+          <!-- Thumbnails -->
           <a href="./../foodimages/gallery4.jpg" class="thumbnail-link">
             <img src="./../foodimages/gallery4.jpg" alt="Padi Veggies" class="thumbnail">
             <div class="thumbnail-overlay">
               <span>Padi Veggies</span>
             </div>
           </a>
+          <!-- Meter Element: Display progress -->
           <div class="dish-popularity">
             <label for="padi-veggies-meter">Popularity:</label>
             <meter id="padi-veggies-meter" value="0.7" min="0" max="1">70%</meter>
@@ -181,6 +193,7 @@
       </div>
     </section>
 
+    <!-- Figure and Figcaption: Descriptions for images -->
     <section id="featured-dish">
       <h2>Featured Dish of the Week</h2>
       <figure class="featured-dish-container">
