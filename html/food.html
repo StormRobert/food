@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A food menu and gallery showcasing Kenyan cuisine and other popular dishes with food-related GIFs.">
+  <title>Bokeems Cuisine Gallery</title>
+  <!-- Link to external CSS file in the style folder -->
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Bokeems & friends Cuisine Gallery</h1>
+</header>
+
+<!-- Food Menu Section -->
+<section>
+  <h2>Our Menu</h2>
+  <ul class="menu-list">
+    <li>
+      <h3>Nyama Choma</h3>
+      <p>Grilled meat served with kachumbari (a tomato-onion salad) and ugali.</p>
+      <img src="./../foodimages/nyamachoma.jpeg" alt="Nyama Choma" class="bordered-image">
+    </li>
+    <li>
+      <h3>Fried Chicken</h3>
+      <p>Crispy fried chicken served with fries and a side of coleslaw.</p>
+      <img src="./../foodimages/chickenfries.jpg" alt="Fried Chicken" class="bordered-image">
+    </li>
+    <li>
+      <h3>Spaghetti</h3>
+      <p>Classic spaghetti served with meatballs in tomato sauce.</p>
+      <img src="./../foodimages/sphagetti.jpg" alt="Spaghetti" class="bordered-image">
+    </li>
+    <li>
+      <h3>Smocha</h3>
+      <p>A unique street food: a combination of boiled egg and samosa wrapped in chapati.</p>
+      <img src="./../foodimages/smocha2.jpeg" alt="Smocha" class="bordered-image">
+    </li>
+    <li>
+      <h3>Ugali & Wet Fry</h3>
+      <p>Kenya’s staple dish of cornmeal dough (ugali) served with fried beef. </p>
+      <img src="./../foodimages/ugalibeef.jpg" alt="Ugali & Sukuma Wiki" class="bordered-image">
+    </li>
+  </ul>
+</section>
+
+<!-- Graphics Section (SVG) -->
+<section>
+  <h2>Our Special Staff</h2>
+  <div class="svg-container">
+    <div class="svg-wrapper">
+      <svg width="220" height="270" viewBox="0 0 220 270">
+        <!-- Decorative frame -->
+        <rect x="10" y="10" width="200" height="250" fill="none" stroke="#92E3A9" stroke-width="4" rx="15"/>
+        <path d="M10 40 H210" stroke="#92E3A9" stroke-width="2"/>
+        <path d="M10 230 H210" stroke="#92E3A9" stroke-width="2"/>
+        <!-- Existing SVG -->
+        <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-bro.svg"/>
+        <!-- Text -->
+        <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Master Chef</text>
+      </svg>
+    </div>
+    <div class="svg-wrapper">
+      <svg width="220" height="270" viewBox="0 0 220 270">
+        <!-- Decorative frame -->
+        <rect x="10" y="10" width="200" height="250" fill="none" stroke="#92E3A9" stroke-width="4" rx="15"/>
+        <path d="M10 40 H210" stroke="#92E3A9" stroke-width="2"/>
+        <path d="M10 230 H210" stroke="#92E3A9" stroke-width="2"/>
+        <!-- Existing SVG -->
+        <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-cuate.svg"/>
+        <!-- Text -->
+        <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Culinary Artist</text>
+      </svg>
+    </div>
+    <div class="svg-wrapper">
+      <svg width="220" height="270" viewBox="0 0 220 270">
+        <!-- Decorative frame -->
+        <rect x="10" y="10" width="200" height="250" fill="none" stroke="#92E3A9" stroke-width="4" rx="15"/>
+        <path d="M10 40 H210" stroke="#92E3A9" stroke-width="2"/>
+        <path d="M10 230 H210" stroke="#92E3A9" stroke-width="2"/>
+        <!-- Existing SVG -->
+        <image x="10" y="40" width="200" height="200" href="./../foodimages/Cooking-cuate.svg"/>
+        <!-- Text -->
+        <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Flavor Expert</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- GIF Section -->
+<section>
+  <h2>Food in Action (GIFs)</h2>
+  <div class="gif-gallery">
+    <div class="gif-wrapper">
+      <iframe src="https://giphy.com/embed/2FazdQof8pxdNYyOc" width="480" height="274" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <p class="gif-caption">Nyama Choma grilling</p>
+    </div>
+    <div class="gif-wrapper">
+      <iframe src="https://giphy.com/embed/8Xg2ZRqynzIdkKqzDb" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <p class="gif-caption">Fried Chicken</p>
+    </div>
+    <div class="gif-wrapper">
+      <iframe src="https://giphy.com/embed/EV75XiLFlmQ9qrThg6" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <p class="gif-caption">Chapati and Stew</p>
+    </div>
+  </div>
+</section>
+
+<!-- Thumbnails Section -->
+<section>
+  <h2>Food Thumbnails</h2>
+  <div class="thumbnail-gallery">
+    <a href="./../foodimages/gallery4.jpg">
+      <img src="./../foodimages/gallery4.jpg" alt="Padi Veggies Thumbnail" class="thumbnail">
+    </a>
+    <a href="./../foodimages/gallery3.jpg">
+      <img src="./../foodimages/gallery3.jpg" alt="Fried Chicken Thumbnail" class="thumbnail">
+    </a>
+    <a href="./../foodimages/gallery1.jpg">
+      <img src="./../foodimages/gallery1.jpg" alt="Chicken Tikka Thumbnail" class="thumbnail">
+    </a>
+  </div>
+</section>
+
+<!-- Combined Optimized and Background Image Section -->
+<section id="special-dish-section">
+  <h2>Our Special Dishes</h2>
+  <picture>
+    <source srcset="./../foodimages/gallery2.webp type="image/webp">
+    <source srcset="./../foodimages/gallery2.jpeg" type="image/jpeg">
+    <img src="./../foodimages/gallery2.jpg" alt="Collection of Kenyan Dishes" loading="lazy" class="background-image">
+  </picture>
+  <div class="overlay-text">
+    <p>Explore our signature dishes, including the mouthwatering Nyama Choma, traditional Ugali, and flavorful stews. Our menu showcases the best of Kenyan cuisine, prepared with love and expertise by our talented chefs.</p>
+  </div>
+</section>
+
+<!-- Figure and Figcaption Section -->
+<section>
+  <h2>Image Descriptions with &lt;figure&gt; and &lt;figcaption&gt;</h2>
+  <figure>
+    <img src="https://via.placeholder.com/300" alt="Chapati">
+    <figcaption>Traditional Kenyan chapati, a soft, layered flatbread served with stews.</figcaption>
+  </figure>
+</section>
+
+<!-- Meter Element Section -->
+<section>
+  <h2>Dish Popularity</h2>
+  <div class="meter-container">
+    <label for="nyama-choma-meter">Nyama Choma:</label>
+    <meter id="nyama-choma-meter" value="0.8" min="0" max="1">80%</meter>
+    
+    <label for="ugali-meter">Ugali:</label>
+    <meter id="ugali-meter" value="0.9" min="0" max="1">90%</meter>
+    
+    <label for="chapati-meter">Chapati:</label>
+    <meter id="chapati-meter" value="0.7" min="0" max="1">70%</meter>
+  </div>
+</section>
+
+</body>
+</html>
