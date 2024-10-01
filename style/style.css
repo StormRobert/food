@@ -23,20 +23,100 @@ body {
     padding-bottom: 5px;
   }
   
+  /* Our Menu Section Styles */
   .menu-list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
   }
-  
+
   .menu-list li {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+    border-radius: 10px; 
   }
-  
-  .menu-list li img {
-    margin-left: 20px;
-    border: 2px solid #d2691e;
+
+  .menu-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .menu-list .image-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0; 
+  }
+
+  .menu-list .bordered-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 4px solid #92E3A9; /* Add a border */
+    box-sizing: border-box; /* Ensure border is included in element's total size */
+    border-radius: 6px 6px 0 0; /* Slightly smaller radius for the image */
+  }
+
+  .menu-list li:hover .bordered-image {
+    transform: scale(1.05);
+  }
+
+  /* Adjust the pseudo-element for a double border effect */
+  .menu-list .image-container::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 0; /* Remove bottom border to blend with card content */
+    border: 2px solid #ffffff; /* Inner white border */
+    border-bottom: none; /* Remove bottom border */
+    border-radius: 4px 4px 0 0; /* Even smaller radius for inner border */
+    pointer-events: none; /* Ensures the pseudo-element doesn't interfere with image interactions */
+  }
+
+  .menu-list .content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-list h3 {
+    color: #333;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+  }
+
+  .menu-list p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+
+  .menu-list .price {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #92E3A9;
+    font-size: 1.2rem;
+  }
+
+  .menu-list .bordered-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #92E3A9;
   }
   
   .bordered-image {
@@ -170,32 +250,170 @@ body {
 #special-dish-section {
   position: relative;
   overflow: hidden;
-  padding: 2rem;
+}
+
+#special-dish-section h2 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  padding: 1rem;
+  margin: 0;
+}
+
+#special-dish-section picture {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 #special-dish-section .background-image {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+#special-dish-section .overlay-card {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 30%;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#special-dish-section .overlay-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+#special-dish-section .overlay-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #special-dish-section .overlay-card {
+    width: 50%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #special-dish-section .overlay-card {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Hero Section Styles */
+#hero-section {
+  position: relative;
+  max-height: 70vh; 
+  min-height: 450px; /* Increased minimum height */
+  overflow: hidden;
+}
+
+#hero-section h2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+  color: white;
+  font-size: 3rem; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#hero-section picture {
+  width: 100%;
+  height: 100%;
+}
+
+#hero-section .background-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-#special-dish-section .overlay-text {
+#hero-section .overlay-card {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 30px;
+  right: 30px;
+  width: 50%; /* Increased width */
+  max-width: 500px; /* Increased max-width */
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
+  backdrop-filter: blur(10px);
+  padding: 2rem; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  text-align: center;
 }
 
-#special-dish-section .overlay-text p {
-  max-width: 600px;
-  font-size: 1.1rem;
+#hero-section .overlay-card h3 {
+  margin-top: 0;
+  font-size: 1.8rem; 
+  margin-bottom: 1rem;
+}
+
+#hero-section .overlay-card p {
+  font-size: 1.2rem; 
   line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hero-section h2 {
+    font-size: 2.5rem;
+  }
+
+  #hero-section .overlay-card {
+    width: 60%;
+    padding: 1.5rem;
+  }
+
+  #hero-section .overlay-card h3 {
+    font-size: 1.5rem;
+  }
+
+  #hero-section .overlay-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero-section h2 {
+    font-size: 2rem;
+    top: 20px;
+    left: 20px;
+  }
+
+  #hero-section .overlay-card {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #hero-section .overlay-card h3 {
+    font-size: 1.3rem;
+  }
+
+  #hero-section .overlay-card p {
+    font-size: 0.9rem;
+  }
 }
