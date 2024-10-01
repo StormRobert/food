@@ -11,7 +11,7 @@
 <body>
 
 <header>
-  <h1>Bokeems & friends Cuisine Gallery</h1>
+  <h1>Bokeem & Daniel Cuisine Gallery</h1>
 </header>
 
 <!-- Hero Section -->
@@ -88,80 +88,92 @@
 </section>
 
 <!-- Graphics Section (SVG) -->
-<section>
+<section id="special-staff">
   <h2>Our Special Staff</h2>
-  <div class="svg-container">
-    <div class="svg-wrapper">
+  <div class="staff-container">
+    <div class="staff-card">
       <svg width="220" height="270" viewBox="0 0 220 270">
-        <!-- Decorative frame -->
-        <rect x="10" y="10" width="200" height="250" fill="none" stroke="#92E3A9" stroke-width="4" rx="15"/>
-        <path d="M10 40 H210" stroke="#92E3A9" stroke-width="2"/>
-        <path d="M10 230 H210" stroke="#92E3A9" stroke-width="2"/>
-        <!-- Existing SVG -->
+        <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
         <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-bro.svg"/>
-        <!-- Text -->
         <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Master Chef</text>
       </svg>
+      <h3>Bokeem Waite</h3>
+      <p>2 years of culinary excellence</p>
     </div>
-    <div class="svg-wrapper">
+    <div class="staff-card">
       <svg width="220" height="270" viewBox="0 0 220 270">
-        <!-- Decorative frame -->
-        <rect x="10" y="10" width="200" height="250" fill="none" stroke="#92E3A9" stroke-width="4" rx="15"/>
-        <path d="M10 40 H210" stroke="#92E3A9" stroke-width="2"/>
-        <path d="M10 230 H210" stroke="#92E3A9" stroke-width="2"/>
-        <!-- Existing SVG -->
+        <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
         <image x="10" y="40" width="200" height="200" href="./../foodimages/Chef-cuate.svg"/>
-        <!-- Text -->
         <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Culinary Artist</text>
       </svg>
+      <h3>Jane Doe</h3>
+      <p>Innovative fusion cuisine specialist</p>
     </div>
-    <div class="svg-wrapper">
+    <div class="staff-card">
       <svg width="220" height="270" viewBox="0 0 220 270">
-        <!-- Decorative frame -->
-        <rect x="10" y="10" width="200" height="250" fill="none" stroke="#92E3A9" stroke-width="4" rx="15"/>
-        <path d="M10 40 H210" stroke="#92E3A9" stroke-width="2"/>
-        <path d="M10 230 H210" stroke="#92E3A9" stroke-width="2"/>
-        <!-- Existing SVG -->
+        <rect x="10" y="10" width="200" height="250" fill="#f8f8f8" stroke="#92E3A9" stroke-width="4" rx="15"/>
         <image x="10" y="40" width="200" height="200" href="./../foodimages/Cooking-cuate.svg"/>
-        <!-- Text -->
         <text x="110" y="255" text-anchor="middle" fill="#333" font-size="16">Flavor Expert</text>
       </svg>
+      <h3>Daniel Wisdom</h3>
+      <p>Spice master and taste profiler</p>
     </div>
   </div>
 </section>
 
 <!-- GIF Section -->
-<section>
-  <h2>Food in Action (GIFs)</h2>
+<section id="food-in-action">
+  <h2>Food in Action</h2>
   <div class="gif-gallery">
     <div class="gif-wrapper">
-      <iframe src="https://giphy.com/embed/2FazdQof8pxdNYyOc" width="480" height="274" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif-container">
+        <iframe src="https://giphy.com/embed/2FazdQof8pxdNYyOc" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
       <p class="gif-caption">Nyama Choma grilling</p>
     </div>
     <div class="gif-wrapper">
-      <iframe src="https://giphy.com/embed/8Xg2ZRqynzIdkKqzDb" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif-container">
+        <iframe src="https://giphy.com/embed/8Xg2ZRqynzIdkKqzDb" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
       <p class="gif-caption">Fried Chicken</p>
     </div>
     <div class="gif-wrapper">
-      <iframe src="https://giphy.com/embed/EV75XiLFlmQ9qrThg6" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <div class="gif-container">
+        <iframe src="https://giphy.com/embed/EV75XiLFlmQ9qrThg6" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
       <p class="gif-caption">Chapati and Stew</p>
     </div>
   </div>
 </section>
 
 <!-- Thumbnails Section -->
-<section>
-  <h2>Food Thumbnails</h2>
+<section id="food-thumbnails">
+  <h2>Food Gallery</h2>
   <div class="thumbnail-gallery">
-    <a href="./../foodimages/gallery4.jpg">
-      <img src="./../foodimages/gallery4.jpg" alt="Padi Veggies Thumbnail" class="thumbnail">
-    </a>
-    <a href="./../foodimages/gallery3.jpg">
-      <img src="./../foodimages/gallery3.jpg" alt="Fried Chicken Thumbnail" class="thumbnail">
-    </a>
-    <a href="./../foodimages/gallery1.jpg">
-      <img src="./../foodimages/gallery1.jpg" alt="Chicken Tikka Thumbnail" class="thumbnail">
-    </a>
+    <div class="thumbnail-item">
+      <a href="./../foodimages/gallery4.jpg" class="thumbnail-link">
+        <img src="./../foodimages/gallery4.jpg" alt="Padi Veggies" class="thumbnail">
+        <div class="thumbnail-overlay">
+          <span>Padi Veggies</span>
+        </div>
+      </a>
+    </div>
+    <div class="thumbnail-item">
+      <a href="./../foodimages/gallery3.jpg" class="thumbnail-link">
+        <img src="./../foodimages/gallery3.jpg" alt="Fried Chicken" class="thumbnail">
+        <div class="thumbnail-overlay">
+          <span>Fried Chicken</span>
+        </div>
+      </a>
+    </div>
+    <div class="thumbnail-item">
+      <a href="./../foodimages/gallery1.jpg" class="thumbnail-link">
+        <img src="./../foodimages/gallery1.jpg" alt="Chicken Tikka" class="thumbnail">
+        <div class="thumbnail-overlay">
+          <span>Chicken Tikka</span>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
